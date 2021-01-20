@@ -1,0 +1,12 @@
+/* PIXEL PERFECT */
+
+html {
+  --min-width: 1900px;
+
+  min-width: var(--min-width);
+  background: url(../images/mockup.png) 50% 0 no-repeat;
+}
+
+body {
+  opacity: 0.5;
+}

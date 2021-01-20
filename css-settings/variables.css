@@ -1,0 +1,22 @@
+/* CSS VARIABLES */
+
+:root {
+  /* width */
+  --w-container: 1465px;
+  
+  /* gap size */
+  --gap: 15px;
+  --gap-min: -15px;
+
+  /* fonts */
+  --f-SegoeUiReg: "Segoe UI Regular";
+  --f-SegoeUiBold: "SegoeUI Bold";
+  --f-ClearSans: "Clear Sans";
+  
+  /* colors */
+  --c-white-v1: #FFFFFF;
+  --c-red-v1: #e6362c;
+  --c-black-v1: #000000;
+  --c-grey-v1: #4d4d4d;
+  --c-grey-v2: #e6e6e6;
+}

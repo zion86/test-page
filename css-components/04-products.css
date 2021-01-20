@@ -1,0 +1,174 @@
+.products {
+  margin-bottom: 75px;
+  position: relative;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0, transparent 100%),
+                    url(../images/products/bg-products.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  overflow: hidden;
+}
+
+.products__trust {
+  margin-top: 80px;
+}
+
+.products__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__title {
+  margin-bottom: 44px;
+  font-size: 37px;
+  line-height: 37px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: var(--f-SegoeUiBold);
+}
+
+.products__description {
+  margin-bottom: 55px;
+  max-width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -50px;
+  margin-bottom: -50px;
+}
+
+.products__item {
+  margin-right: 50px;
+  margin-bottom: 50px;
+  width: calc((100% / 4 - 50px));
+  min-height: 397px;
+  max-width: 450px;
+  position: relative;
+  display: flex;
+  background-color: black;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.fan-card__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.products__item:hover > .fan-card {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s visibility, 0.3s opacity;
+}
+
+.fan-card {
+  padding: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fan-card__title {
+  font-family: var(--f-SegoeUiBold);
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+.fan-card__info {
+  padding: 68px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s visibility, 0.3s opacity;
+}
+
+.products__item:hover > .fan-card__info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fan-card__ico {
+  margin-bottom: 28px;
+}
+
+.fan-card__sub-title {
+  margin-bottom: 24px;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--c-grey-v2);
+}
+
+.fan-card__description {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.fan-card__link {
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: var(--c-red-v1);
+}
+
+
+/* @MEDIA */
+@media (max-width: 1330px) {
+  .products__list {
+    margin-right: -35px;
+    margin-bottom: -35px;
+  }
+  .products__item {
+    margin-right: 35px;
+    margin-bottom: 35px;
+    width: calc((100% / 3 - 35px));
+  }
+  .fan-card__info {
+    padding: 58px 30px;
+  }
+}
+@media (max-width: 960px) {
+  .products__list {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .products__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% / 2 - 30px));
+  }
+}
+@media (max-width: 650px) {
+  .products__list {
+    margin-right: 0;
+  }
+  .products__item {
+    margin-right: 0;
+    width: 100%;  
+  }
+}
